@@ -1,8 +1,9 @@
-package testcases;
+package testscenarios;
 
 import java.util.Random;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
@@ -11,29 +12,33 @@ import pages.RegistrationPage;
 
 public class TC002_Registration extends BaseClass{
 	
-
+	@BeforeTest
+	public void testCasesetUp() {
+		sExcelName = "TC002";
+		System.out.println(sExcelName);
+	}
 	
 	@Test(priority = 1)
 	public void registrationFieldValidation() {
-		boolean result = new LoginPage()
+		boolean result = new LoginPage(driver)
 		.clickRegister()
 		.fieldValidation();
 		Assert.assertTrue(result);
-		new RegistrationPage().clickLogin();
+		new RegistrationPage(driver).clickLogin();
 	}
 	
-	@Test(priority = 2)
-	public void registerWithMandatoryField() {
-		new LoginPage()
+	@Test(priority = 2,dataProvider = "TestCaseData")
+	public void registerWithMandatoryField(String fName,String lName,String uName,String email,String password) {
+		new LoginPage(driver)
 		.clickRegister()
-		.enterFirstName("Mathan")
+		.enterFirstName(fName)
 		.selectTitle("Mr")
 		.enterMiddleName()
-		.enterLastName("Chandrasekaran")
+		.enterLastName(lName)
 		.selectGender("Male")
-		.enterUserName("Mathan"+generateRandomInt(100, 100000))
-		.enterEmail("credo"+generateRandomInt(100, 100000)+"@gmail.com")
-		.enterPassword("Testing123")
+		.enterUserName(uName+generateRandomInt(100, 100000))
+		.enterEmail(email+generateRandomInt(100, 100000)+"@gmail.com")
+		.enterPassword(password)
 		.clickRegisterLink()
 		.verifyUserRegistration()
 		.clickOnLogin();

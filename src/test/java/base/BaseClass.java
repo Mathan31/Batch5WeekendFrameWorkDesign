@@ -4,16 +4,23 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+
+import utilities.ExcelReader;
+import utilities.PropertiesReader;
 
 public class BaseClass {
 	
-	public static WebDriver driver;
+	public WebDriver driver;
 	public int iBrowserType = 1;
-	public String sURL = "https://uibank.uipath.com/";
+	public String sPropertyFile = "Environment_Details";
+	public String sExcelName="";
+	public String sURL = PropertiesReader.getPropertyValue(sPropertyFile, "production");
 	
 	@BeforeClass
 	public void invokeBrowser() {
@@ -52,6 +59,12 @@ public class BaseClass {
 	@AfterClass
 	public void closeBrowser() {
 		driver.quit();
+	}
+	
+	@DataProvider(name="TestCaseData")
+	public Object[][] getExcelData() {
+		Object[][] data = ExcelReader.getValueFromExcel(sExcelName);
+		return data;
 	}
 
 }
