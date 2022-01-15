@@ -15,21 +15,26 @@ public class TC002_Registration extends BaseClass{
 	@BeforeTest
 	public void testCasesetUp() {
 		sExcelName = "TC002";
-		System.out.println(sExcelName);
+		authors = "Saran";
+		category = "Sanity";
+		testCaseName = "Registration";
+		testDescription = "Testing all the Register Functionality";
+		module = "Register Module";
 	}
+	
 	
 	@Test(priority = 1)
 	public void registrationFieldValidation() {
-		boolean result = new LoginPage(driver)
+		boolean result = new LoginPage(driver,node)
 		.clickRegister()
 		.fieldValidation();
 		Assert.assertTrue(result);
-		new RegistrationPage(driver).clickLogin();
+		new RegistrationPage(driver,node).clickLogin();
 	}
 	
 	@Test(priority = 2,dataProvider = "TestCaseData")
 	public void registerWithMandatoryField(String fName,String lName,String uName,String email,String password) {
-		new LoginPage(driver)
+		new LoginPage(driver,node)
 		.clickRegister()
 		.enterFirstName(fName)
 		.selectTitle("Mr")

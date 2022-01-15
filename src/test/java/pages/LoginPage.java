@@ -3,7 +3,10 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import base.BaseClass;
+import libraries.SeleniumWrapper;
 
 public class LoginPage extends BaseClass{
 	
@@ -12,14 +15,17 @@ public class LoginPage extends BaseClass{
 	private By oSignIn = By.xpath("//button[text()='Sign In']");
 	private By oRegister = By.xpath("//*[text()='Register For Account']");
 	private WebDriver driver;
+	private SeleniumWrapper oWrap;
 	
-	public LoginPage(WebDriver driver) {
+	public LoginPage(WebDriver driver,ExtentTest node) {
 		this.driver = driver;
+		this.node = node;
+		oWrap = new SeleniumWrapper(driver, node);
 	}
 	
 	public boolean verifyElement() {
-		if(driver.findElement(oUsername).isDisplayed() && driver.findElement(oPassword).isDisplayed()
-				&& driver.findElement(oSignIn).isDisplayed()&& driver.findElement(oRegister).isDisplayed()) {
+		if(oWrap.verifyDisplayedwithReturn(driver.findElement(oUsername))&& oWrap.verifyDisplayedwithReturn(driver.findElement(oPassword))
+				&& oWrap.verifyDisplayedwithReturn(driver.findElement(oSignIn))&& oWrap.verifyDisplayedwithReturn(driver.findElement(oRegister))) {
 			return true;		
 		}else {
 			return false;
@@ -27,34 +33,28 @@ public class LoginPage extends BaseClass{
 	}
 	
 	public LoginPage typeUserName(String userName) {
-		driver.findElement(oUsername).sendKeys(userName);
+		oWrap.type(driver.findElement(oUsername),userName);
 		return this;
 	}
 	
-	public LoginPage typePassword(String userName) {
-		driver.findElement(oPassword).sendKeys(userName);
+	public LoginPage typePassword(String password) {
+		oWrap.type(driver.findElement(oPassword),password);
 		return this;
 	}
 	
 	public HomePage clickSignIn() {
-		driver.findElement(oSignIn).click();
-		return new HomePage(driver);
+		oWrap.click(driver.findElement(oSignIn));
+		return new HomePage(driver,node);
 	}
 	
 	public LoginPage clickSignInFailed() {
-		driver.findElement(oSignIn).click();
+		oWrap.click(driver.findElement(oSignIn));
 		return this;
 	}
 	
 	public RegistrationPage clickRegister() {
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		driver.findElement(oRegister).click();
-		return new RegistrationPage(driver);
+		oWrap.click(driver.findElement(oRegister));
+		return new RegistrationPage(driver,node);
 	}
 
 }
