@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="2" total="11" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27687" started-at="2022-01-15T10:12:33 IST" finished-at="2022-01-15T10:13:00 IST">
+  <suite name="Suite" duration-ms="26656" started-at="2022-01-16T05:31:56 IST" finished-at="2022-01-16T05:32:23 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="27687" started-at="2022-01-15T10:12:33 IST" finished-at="2022-01-15T10:13:00 IST">
+    <test name="Test" duration-ms="26656" started-at="2022-01-16T05:31:56 IST" finished-at="2022-01-16T05:32:23 IST">
       <class name="testscenarios.TC002_Registration">
-        <test-method status="PASS" signature="testCasesetUp()[pri:0, instance:testscenarios.TC002_Registration@2f0a87b3]" name="testCasesetUp" is-config="true" duration-ms="1" started-at="2022-01-15T10:12:33 IST" finished-at="2022-01-15T10:12:33 IST">
+        <test-method status="PASS" signature="testCasesetUp()[pri:0, instance:testscenarios.TC002_Registration@2f0a87b3]" name="testCasesetUp" is-config="true" duration-ms="0" started-at="2022-01-16T05:31:56 IST" finished-at="2022-01-16T05:31:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCasesetUp -->
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testscenarios.TC002_Registration@2f0a87b3]" name="invokeBrowser" is-config="true" duration-ms="6588" started-at="2022-01-15T10:12:33 IST" finished-at="2022-01-15T10:12:39 IST">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testscenarios.TC002_Registration@2f0a87b3]" name="invokeBrowser" is-config="true" duration-ms="6895" started-at="2022-01-16T05:31:56 IST" finished-at="2022-01-16T05:32:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="registrationFieldValidation()[pri:1, instance:testscenarios.TC002_Registration@2f0a87b3]" name="registrationFieldValidation" duration-ms="2341" started-at="2022-01-15T10:12:39 IST" finished-at="2022-01-15T10:12:42 IST">
+        <test-method status="PASS" signature="registrationFieldValidation()[pri:1, instance:testscenarios.TC002_Registration@2f0a87b3]" name="registrationFieldValidation" duration-ms="1774" started-at="2022-01-16T05:32:03 IST" finished-at="2022-01-16T05:32:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationFieldValidation -->
-        <test-method status="PASS" signature="registerWithMandatoryField(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC002_Registration@2f0a87b3]" name="registerWithMandatoryField" duration-ms="5961" started-at="2022-01-15T10:12:43 IST" data-provider="TestCaseData" finished-at="2022-01-15T10:12:49 IST">
+        <test-method status="PASS" signature="registerWithMandatoryField(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC002_Registration@2f0a87b3]" name="registerWithMandatoryField" duration-ms="5683" started-at="2022-01-16T05:32:06 IST" data-provider="TestCaseData" finished-at="2022-01-16T05:32:12 IST">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerWithMandatoryField -->
-        <test-method status="PASS" signature="registerWithMandatoryField(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC002_Registration@2f0a87b3]" name="registerWithMandatoryField" duration-ms="5389" started-at="2022-01-15T10:12:49 IST" data-provider="TestCaseData" finished-at="2022-01-15T10:12:54 IST">
+        <test-method status="PASS" signature="registerWithMandatoryField(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC002_Registration@2f0a87b3]" name="registerWithMandatoryField" duration-ms="5275" started-at="2022-01-16T05:32:12 IST" data-provider="TestCaseData" finished-at="2022-01-16T05:32:17 IST">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerWithMandatoryField -->
-        <test-method status="PASS" signature="registerWithMandatoryField(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC002_Registration@2f0a87b3]" name="registerWithMandatoryField" duration-ms="4833" started-at="2022-01-15T10:12:54 IST" data-provider="TestCaseData" finished-at="2022-01-15T10:12:59 IST">
+        <test-method status="PASS" signature="registerWithMandatoryField(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC002_Registration@2f0a87b3]" name="registerWithMandatoryField" duration-ms="4899" started-at="2022-01-16T05:32:17 IST" data-provider="TestCaseData" finished-at="2022-01-16T05:32:22 IST">
           <params>
             <param index="0">
               <value>
@@ -112,29 +112,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerWithMandatoryField -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscenarios.TC002_Registration@2f0a87b3]" name="closeBrowser" is-config="true" duration-ms="967" started-at="2022-01-15T10:12:59 IST" finished-at="2022-01-15T10:13:00 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscenarios.TC002_Registration@2f0a87b3]" name="closeBrowser" is-config="true" duration-ms="899" started-at="2022-01-16T05:32:22 IST" finished-at="2022-01-16T05:32:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testscenarios.TC002_Registration -->
       <class name="testscenarios.TC001_Login">
-        <test-method status="PASS" signature="reportInit()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="reportInit" is-config="true" duration-ms="137" started-at="2022-01-15T10:12:32 IST" finished-at="2022-01-15T10:12:33 IST">
+        <test-method status="PASS" signature="reportInit()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="reportInit" is-config="true" duration-ms="157" started-at="2022-01-16T05:31:56 IST" finished-at="2022-01-16T05:31:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportInit -->
-        <test-method status="PASS" signature="testCasesetUp()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="testCasesetUp" is-config="true" duration-ms="0" started-at="2022-01-15T10:12:33 IST" finished-at="2022-01-15T10:12:33 IST">
+        <test-method status="PASS" signature="testCasesetUp()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="testCasesetUp" is-config="true" duration-ms="0" started-at="2022-01-16T05:31:56 IST" finished-at="2022-01-16T05:31:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCasesetUp -->
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="invokeBrowser" is-config="true" duration-ms="7757" started-at="2022-01-15T10:12:33 IST" finished-at="2022-01-15T10:12:40 IST">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="invokeBrowser" is-config="true" duration-ms="6927" started-at="2022-01-16T05:31:56 IST" finished-at="2022-01-16T05:32:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="loginFieldValidation()[pri:1, instance:testscenarios.TC001_Login@4c762604]" name="loginFieldValidation" duration-ms="1792" started-at="2022-01-15T10:12:40 IST" finished-at="2022-01-15T10:12:42 IST">
+        <test-method status="PASS" signature="loginFieldValidation()[pri:1, instance:testscenarios.TC001_Login@4c762604]" name="loginFieldValidation" duration-ms="1689" started-at="2022-01-16T05:32:03 IST" finished-at="2022-01-16T05:32:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFieldValidation -->
-        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC001_Login@4c762604]" name="loginWithValidCredential" duration-ms="4345" started-at="2022-01-15T10:12:43 IST" data-provider="TestCaseData" finished-at="2022-01-15T10:12:47 IST">
+        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC001_Login@4c762604]" name="loginWithValidCredential" duration-ms="4097" started-at="2022-01-16T05:32:06 IST" data-provider="TestCaseData" finished-at="2022-01-16T05:32:10 IST">
           <params>
             <param index="0">
               <value>
@@ -150,7 +150,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredential -->
-        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC001_Login@4c762604]" name="loginWithValidCredential" duration-ms="3486" started-at="2022-01-15T10:12:47 IST" data-provider="TestCaseData" finished-at="2022-01-15T10:12:51 IST">
+        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC001_Login@4c762604]" name="loginWithValidCredential" duration-ms="3412" started-at="2022-01-16T05:32:10 IST" data-provider="TestCaseData" finished-at="2022-01-16T05:32:14 IST">
           <params>
             <param index="0">
               <value>
@@ -166,7 +166,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredential -->
-        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC001_Login@4c762604]" name="loginWithValidCredential" duration-ms="3663" started-at="2022-01-15T10:12:51 IST" data-provider="TestCaseData" finished-at="2022-01-15T10:12:54 IST">
+        <test-method status="PASS" signature="loginWithValidCredential(java.lang.String,java.lang.String)[pri:2, instance:testscenarios.TC001_Login@4c762604]" name="loginWithValidCredential" duration-ms="3212" started-at="2022-01-16T05:32:14 IST" data-provider="TestCaseData" finished-at="2022-01-16T05:32:17 IST">
           <params>
             <param index="0">
               <value>
@@ -182,15 +182,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredential -->
-        <test-method status="PASS" signature="loginWithInValidCredential()[pri:3, instance:testscenarios.TC001_Login@4c762604]" name="loginWithInValidCredential" duration-ms="4107" started-at="2022-01-15T10:12:54 IST" finished-at="2022-01-15T10:12:59 IST">
+        <test-method status="PASS" signature="loginWithInValidCredential()[pri:3, instance:testscenarios.TC001_Login@4c762604]" name="loginWithInValidCredential" duration-ms="3447" started-at="2022-01-16T05:32:17 IST" finished-at="2022-01-16T05:32:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInValidCredential -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="closeBrowser" is-config="true" duration-ms="1609" started-at="2022-01-15T10:12:59 IST" finished-at="2022-01-15T10:13:00 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="closeBrowser" is-config="true" duration-ms="1806" started-at="2022-01-16T05:32:20 IST" finished-at="2022-01-16T05:32:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="flushReport()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="flushReport" is-config="true" duration-ms="550" started-at="2022-01-15T10:13:00 IST" finished-at="2022-01-15T10:13:01 IST">
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:testscenarios.TC001_Login@4c762604]" name="flushReport" is-config="true" duration-ms="481" started-at="2022-01-16T05:32:23 IST" finished-at="2022-01-16T05:32:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
